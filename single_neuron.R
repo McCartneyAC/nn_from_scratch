@@ -1,17 +1,5 @@
 # Neural Nets From Scratch
 
-sigmoid<-function(x){
-  1/(1+exp(-x))
-}
-
-sigmoid_derivative<-function(x){
-  x*(1-x)
-}
-
-dot <- function(x,y){
-  x %*% y
-}
-
 think <- function(inputs, network){
   sigmoid(dot(inputs, network))
 }
